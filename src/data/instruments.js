@@ -96,6 +96,17 @@ const milleniumDrumKit = {
     cost: 1600,
 };
 
+const gokiMaracas = {
+    code: 'goki-maracas',
+    name: 'Goki Maracas',
+    image: '../assets/goki-maracas.jpg',
+    description: 'Celebrate Pride with these rainbow maracas',
+    category: 'acoustic',
+    family: 'percussion',
+    price: 20,
+    cost: 10,
+};
+
 const instruments = [
     ibanezIceman,
     fenderJazzBass,
@@ -106,6 +117,7 @@ const instruments = [
     dacarboTrumpet,
     jupiterTenorSax,
     milleniumDrumKit,
+    gokiMaracas,
 ];
 
 export default instruments;
