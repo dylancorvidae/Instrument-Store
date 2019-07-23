@@ -12,10 +12,11 @@ test('renders an instrument', assert => {
         image: '../assets/ibanez-iceman.jpg',
         description: 'Totally shreds, great for downtuning',
         category: 'electric',
+        family: 'strings',
         price: 800,
         cost: 650,
     };
-    const expected = '<li class="electric" title="Totally shreds, great for downtuning"><h3>Ibanez Iceman</h3><img src="../assets/ibanez-iceman.jpg" class="resize" alt="Ibanez Iceman image"><p class="price">$800.00<button value="ibanez-iceman">Add to cart</button></p></li>';
+    const expected = '<li class="electric strings" title="Totally shreds, great for downtuning"><h3>Ibanez Iceman</h3><img src="../assets/ibanez-iceman.jpg" class="resize" alt="Ibanez Iceman image"><p class="price">$800.00<button value="ibanez-iceman">Add to cart</button></p></li>';
     //act
     const dom = renderInstrument(ibanezIceman);
     console.log(dom);

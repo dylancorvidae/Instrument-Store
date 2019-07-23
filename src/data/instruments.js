@@ -4,6 +4,7 @@ const ibanezIceman = {
     image: '../assets/ibanez-iceman.jpg',
     description: 'Totally shreds, great for downtuning',
     category: 'electric',
+    family: 'strings',
     price: 800,
     cost: 650,
 };
@@ -14,6 +15,7 @@ const fenderJazzBass = {
     image: '../assets/fender-jazz-bass.jpg',
     description: 'Fat tones, big low-end',
     category: 'electric',
+    family: 'strings',
     price: 600,
     cost: 450,
 };
@@ -23,6 +25,7 @@ const derosa12Acoustic = {
     image: '../assets/derosa-12-acoustic.jpg',
     description: 'Full acoustic sound, great for layering',
     category: 'acoustic',
+    family: 'strings',
     price: 500,
     cost: 350,
 };
@@ -33,6 +36,7 @@ const bluesDeluxe = {
     image: '../assets/blues-deluxe.jpg',
     description: 'Crank it up to 11',
     category:'electric',
+    family: 'amps',
     price: 500,
     cost: 300,
 };
@@ -43,6 +47,7 @@ const yamahaCello = {
     image: '../assets/yamaha-cello.jpg',
     description: 'Bright tone, smooth action',
     category: 'acoustic',
+    family: 'strings',
     price: 1200,
     cost: 1000,
 };
@@ -53,6 +58,7 @@ const yamahaElectricCello = {
     image: '../assets/yamaha-electric-cello.jpg',
     description: 'Bright tone, smooth action, looks awesome',
     category: 'electric',
+    family: 'strings',
     price: 900,
     cost: 800,
 };
@@ -63,6 +69,7 @@ const dacarboTrumpet = {
     image: '../assets/decarbo-trumpet.jpg',
     description: 'Carbon fiber bell, sweet tone',
     category: 'acoustic',
+    family: 'brass',
     price: 1500,
     cost: 1100,
 };
@@ -73,6 +80,7 @@ const jupiterTenorSax = {
     image: '../assets/jupiter-tenor-sax.jpg',
     description: 'beautiful clear tone, silver keys',
     category: 'acoustic',
+    family: 'woodwind',
     price: 1400,
     cost: 1200,
 };
@@ -83,6 +91,7 @@ const milleniumDrumKit = {
     image: '../assets/millenium-double-bass.jpg',
     description: 'For when you need to punish your eardrums',
     category: 'acoustic',
+    family: 'percussion',
     price: 2000,
     cost: 1600,
 };

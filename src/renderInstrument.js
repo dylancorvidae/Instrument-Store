@@ -1,6 +1,7 @@
 function renderInstrument(instrument){
     const li = document.createElement('li');
-    li.className = instrument.category;
+    li.classList.add(instrument.category);
+    li.classList.add(instrument.family);
     li.title = instrument.description;
 
     const h3 = document.createElement('h3');
