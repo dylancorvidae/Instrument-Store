@@ -1,8 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica;
+    background-color: lightgray
 };
 
-nav {margin: 30px;}
+nav {
+    margin: 10px 10px;
+    font-size:;
+}
 
 h1 {
     font-family: 'DM Serif Text', serif;;
@@ -10,13 +18,13 @@ h1 {
     margin: 50px;
 }
 
-h2, h3 {
+h2, h3, nav {
     font-family: 'DM Serif Text', serif;
-    margin: 30px;
+    margin: 30px 20px;
 }
 
 p {
-    margin: 0px;
+    margin: 10px;
 }
 
 ol, ul, li {
@@ -27,7 +35,7 @@ img{margin:20px;}
 
 .resize {
     height: auto;
-    width: 400px;
+    width: 100px;
 }
 
 .hidden {

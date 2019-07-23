@@ -1,2 +1,2 @@
-import './renderInstruments.test.js';
+import './renderInstrument.test.js';
 
