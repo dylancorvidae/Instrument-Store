@@ -19,7 +19,6 @@ test('renders an instrument', assert => {
     const expected = '<li class="electric strings" title="Totally shreds, great for downtuning"><h3>Ibanez Iceman</h3><img src="../assets/ibanez-iceman.jpg" class="resize" alt="Ibanez Iceman image"><p class="price">$800.00<button value="ibanez-iceman">Add to cart</button></p></li>';
     //act
     const dom = renderInstrument(ibanezIceman);
-    console.log(dom);
     const html = dom.outerHTML;
     //assert
     assert.equal(html, expected);

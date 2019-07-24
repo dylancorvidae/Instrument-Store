@@ -1,5 +1,4 @@
 import instruments from '../src/data/instruments.js';
-import order from '../src/data/order.js';
 import { findProduct, getLineTotal, getOrderTotal } from '../src/register.js';
 const test = QUnit.test;
 
@@ -30,5 +29,16 @@ test('find product by code', assert => {
 });
 
 test('calculate order total', assert => {
-    const 
+    const order = [{
+        code:'ibanez-iceman',
+        quantity: 1,
+    }, {
+        code:'fender-blues-deluxe',
+        quantity: 2,
+    }];
+    const expected = 1800;
+
+    const orderTotal = getOrderTotal(order, instruments);
+
+    assert.equal(orderTotal, expected);
 });

@@ -14,8 +14,13 @@ export function findProduct(instruments, code) {
 
 export function getOrderTotal(order, instruments) {
     let orderTotal = 0;
-    for(let i = 0; i < order.length; i++) {
-        const order = order[i];
-        findProduct.price * order.quantity;
+    for(let i = 0; i < order.length; i++) { 
+        const orderItem = order[i];
+        const orderItemCode = orderItem.code;
+        const instrument = findProduct(instruments, orderItemCode);
+        console.log(instrument, orderItemCode);
+        const lineItemTotal = orderItem.quantity * instrument.price;
+        orderTotal += lineItemTotal;
     }
+    return orderTotal;
 }
