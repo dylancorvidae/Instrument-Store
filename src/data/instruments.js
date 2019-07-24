@@ -5,8 +5,8 @@ const ibanezIceman = {
     description: 'Totally shreds, great for downtuning',
     category: 'electric',
     family: 'strings',
-    price: 800,
-    cost: 650,
+    price: 800.00,
+    cost: 650.00,
 };
 
 const fenderJazzBass = {
@@ -16,8 +16,8 @@ const fenderJazzBass = {
     description: 'Fat tones, big low-end',
     category: 'electric',
     family: 'strings',
-    price: 600,
-    cost: 450,
+    price: 600.00,
+    cost: 450.00,
 };
 const derosa12Acoustic = {
     code: 'derosa-12-acoustic',
@@ -26,19 +26,19 @@ const derosa12Acoustic = {
     description: 'Full acoustic sound, great for layering',
     category: 'acoustic',
     family: 'strings',
-    price: 500,
-    cost: 350,
+    price: 500.00,
+    cost: 350.00,
 };
 
 const bluesDeluxe = {
     code: 'fender-blues-deluxe',
-    name: 'Fender Blue Deluxe',
+    name: 'Fender Blues Deluxe',
     image: '../assets/blues-deluxe.jpg',
     description: 'Crank it up to 11',
     category:'electric',
     family: 'amps',
-    price: 500,
-    cost: 300,
+    price: 500.00,
+    cost: 300.00,
 };
 
 const yamahaCello = {
@@ -48,8 +48,8 @@ const yamahaCello = {
     description: 'Bright tone, smooth action',
     category: 'acoustic',
     family: 'strings',
-    price: 1200,
-    cost: 1000,
+    price: 1200.00,
+    cost: 1000.00,
 };
 
 const yamahaElectricCello = {
@@ -59,8 +59,8 @@ const yamahaElectricCello = {
     description: 'Bright tone, smooth action, looks awesome',
     category: 'electric',
     family: 'strings',
-    price: 900,
-    cost: 800,
+    price: 900.00,
+    cost: 800.00,
 };
 
 const dacarboTrumpet = {
@@ -70,8 +70,8 @@ const dacarboTrumpet = {
     description: 'Carbon fiber bell, sweet tone',
     category: 'acoustic',
     family: 'brass',
-    price: 1500,
-    cost: 1100,
+    price: 1500.00,
+    cost: 1100.00,
 };
 
 const jupiterTenorSax = {
@@ -81,8 +81,8 @@ const jupiterTenorSax = {
     description: 'beautiful clear tone, silver keys',
     category: 'acoustic',
     family: 'woodwind',
-    price: 1400,
-    cost: 1200,
+    price: 1400.00,
+    cost: 1200.00,
 };
 
 const milleniumDrumKit = {
@@ -92,8 +92,8 @@ const milleniumDrumKit = {
     description: 'For when you need to punish your eardrums',
     category: 'acoustic',
     family: 'percussion',
-    price: 2000,
-    cost: 1600,
+    price: 2000.00,
+    cost: 1600.00,
 };
 
 const gokiMaracas = {
@@ -103,8 +103,8 @@ const gokiMaracas = {
     description: 'Celebrate Pride with these rainbow maracas',
     category: 'acoustic',
     family: 'percussion',
-    price: 20,
-    cost: 10,
+    price: 20.00,
+    cost: 10.00,
 };
 
 const instruments = [

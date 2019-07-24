@@ -18,7 +18,6 @@ export function getOrderTotal(order, instruments) {
         const orderItem = order[i];
         const orderItemCode = orderItem.code;
         const instrument = findProduct(instruments, orderItemCode);
-        console.log(instrument, orderItemCode);
         const lineItemTotal = orderItem.quantity * instrument.price;
         orderTotal += lineItemTotal;
     }
