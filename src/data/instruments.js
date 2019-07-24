@@ -31,7 +31,7 @@ const derosa12Acoustic = {
 };
 
 const bluesDeluxe = {
-    code: 'blues-deluxe',
+    code: 'fender-blues-deluxe',
     name: 'Fender Blue Deluxe',
     image: '../assets/blues-deluxe.jpg',
     description: 'Crank it up to 11',
