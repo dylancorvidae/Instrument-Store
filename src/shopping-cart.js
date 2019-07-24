@@ -1,7 +1,7 @@
 import instruments from './data/instruments.js';
 import { findProduct } from './register.js';
 import renderLineItem from './render-line-item.js';
-import getOrderTotal from './register.js';
+//import getOrderTotal from './register.js';
 import order from './data/order.js';
 
 const tbody = document.querySelector('tbody');
