@@ -17,9 +17,13 @@ h1 {
     margin: 50px;
 }
 
-h2, h3, nav {
+h2, nav {
     font-family: 'DM Serif Text', serif;
     margin: 30px 20px;
+}
+
+main {
+    background-image: url(../assets/music-store.png);
 }
 
 p {
