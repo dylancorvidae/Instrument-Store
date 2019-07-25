@@ -17,7 +17,7 @@ test('find product by code', assert => {
     const expected = {
         code: 'fender-blues-deluxe',
         name: 'Fender Blues Deluxe',
-        image: '../assets/blues-deluxe.jpg',
+        image: '../assets/fender-blues-deluxe.jpg',
         description: 'Crank it up to 11',
         category:'electric',
         family: 'amps',
