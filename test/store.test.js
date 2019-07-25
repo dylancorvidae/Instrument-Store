@@ -32,14 +32,43 @@ test('bootstrap products list', assert => {
     assert.deepEqual(products, instruments);
 });
 
-/*test('get shopping cart, return empty array', assert => {
+test('get shopping cart, return empty array', assert => {
     //arrange
-
     //act
     const shoppingCart = store.getShoppingCart();
-
     //assert
     assert.deepEqual(shoppingCart, []);
 });
 
-test('order product code to empty shopping cart')*/
+test('order product code to empty shopping cart', assert => {
+    //arrange
+    const code = 'ibanez-iceman';
+    const expected = [{
+        code: 'ibanez-iceman',
+        quantity: 1,
+    }];
+
+    //act
+    store.orderProduct(code);
+    const shoppingCart = store.getShoppingCart();
+
+    //assert
+    assert.deepEqual(shoppingCart, expected);
+});
+
+test('add product code to shopping cart multiple times', (assert) => {
+    //arrange
+    const code = 'ibanez-iceman';
+    const expected = [{
+        code: 'ibanez-iceman',
+        quantity: 2,
+    }];
+
+    //act
+    store.orderProduct(code);
+    store.orderProduct(code);
+    const shoppingCart = store.getShoppingCart();
+
+    //assert
+    assert.deepEqual(shoppingCart, expected);
+});
