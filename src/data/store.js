@@ -50,6 +50,11 @@ const store = {
         }
         store.save(SHOPPING_CART_KEY, shoppingCart);
     },
+    getProduct(code){
+        const instruments = store.getProducts();
+        const instrument = findProduct(instruments, code);
+        return instrument;
+    },
 };
 
 export default store;

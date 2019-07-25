@@ -72,3 +72,14 @@ test('add product code to shopping cart multiple times', (assert) => {
     //assert
     assert.deepEqual(shoppingCart, expected);
 });
+
+test('get product', assert => {
+    //arrange
+    const code = 'ibanez-iceman';
+    const expected = instruments[0];
+    //act 
+    const product = store.getProduct(code);
+    
+    //assert
+    assert.deepEqual(product, expected);
+});
