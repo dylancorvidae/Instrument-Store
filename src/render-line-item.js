@@ -1,7 +1,7 @@
-import { getLineTotal } from "./register.js";
+import { getLineTotal } from './register.js';
 import { toUSD } from '../src/data/format.js';
 
-function  renderLineItem(lineItem, instrument){
+function renderLineItem(lineItem, instrument){
     const tr = document.createElement('tr');
     
     const nameCell = document.createElement('td');

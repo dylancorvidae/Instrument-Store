@@ -32,7 +32,7 @@ test('bootstrap products list', assert => {
     assert.deepEqual(products, instruments);
 });
 
-test('get shopping cart, return empty array', assert => {
+/*test('get shopping cart, return empty array', assert => {
     //arrange
 
     //act
@@ -42,4 +42,4 @@ test('get shopping cart, return empty array', assert => {
     assert.deepEqual(shoppingCart, []);
 });
 
-test('order product code to empty shopping cart')
+test('order product code to empty shopping cart')*/
