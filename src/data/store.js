@@ -55,6 +55,11 @@ const store = {
         const instrument = findProduct(instruments, code);
         return instrument;
     },
+    addProduct(newProduct) {
+        const products = store.getProducts();
+        products.push(newProduct)
+        store.save(PRODUCTS_KEY, products);
+    },
 };
 
 export default store;
