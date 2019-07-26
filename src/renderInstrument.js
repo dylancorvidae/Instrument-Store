@@ -1,4 +1,4 @@
-import store from "./data/store.js";
+import store from './data/store.js';
 
 function renderInstrument(instrument){
     const li = document.createElement('li');
