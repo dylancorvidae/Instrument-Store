@@ -1,3 +1,4 @@
 export function toUSD(number) {
-    return number.toLocaleString ('en-US', { style: 'currency', currency: 'USD' });
+    const destringPrice = parseInt(number);
+    return destringPrice.toLocaleString ('en-US', { style: 'currency', currency: 'USD' });
 }

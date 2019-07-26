@@ -1,4 +1,5 @@
 import store from './data/store.js';
+import { toUSD } from './data/format.js';
 
 function renderInstrument(instrument){
     const li = document.createElement('li');
@@ -18,7 +19,7 @@ function renderInstrument(instrument){
 
     const p = document.createElement('p');
     p.className = 'price';
-    const usd = instrument.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    const usd = toUSD(instrument.price);
     const priceTextNode = document.createTextNode(usd);
     p.appendChild(priceTextNode);
 
