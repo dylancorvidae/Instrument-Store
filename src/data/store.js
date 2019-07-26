@@ -57,7 +57,7 @@ const store = {
     },
     addProduct(newProduct) {
         const products = store.getProducts();
-        products.push(newProduct)
+        products.push(newProduct);
         store.save(PRODUCTS_KEY, products);
     },
 };
