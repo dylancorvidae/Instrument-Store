@@ -1,3 +1,5 @@
+import store from "./data/store.js";
+
 function renderInstrument(instrument){
     const li = document.createElement('li');
     li.classList.add(instrument.category);
@@ -19,9 +21,13 @@ function renderInstrument(instrument){
     const usd = instrument.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     const priceTextNode = document.createTextNode(usd);
     p.appendChild(priceTextNode);
+
     const button = document.createElement('button');
     button.textContent = 'Add to cart';
     button.value = instrument.code;
+    button.addEventListener('click', () => {
+        store.orderProduct(instrument.code);
+    });
     p.appendChild(button);
     li.appendChild(p);
 

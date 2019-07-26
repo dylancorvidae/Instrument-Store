@@ -1,14 +1,12 @@
-import instruments from './data/instruments.js';
-import { findProduct } from './register.js';
 import renderLineItem from './render-line-item.js';
-//import getOrderTotal from './register.js';
-import order from './data/order.js';
+import store from './data/store.js';
 
 const tbody = document.querySelector('tbody');
+const shoppingCart = store.getShoppingCart();
 
-for(let i = 0; i < order.length; i++) {
-    const lineItem = order[i];
-    const instrument = findProduct(instruments, lineItem.code);
+for(let i = 0; i < shoppingCart.length; i++) {
+    const lineItem = shoppingCart[i];
+    const instrument = store.getProduct(lineItem.code);
     const dom = renderLineItem(lineItem, instrument);
 
     tbody.appendChild(dom);
