@@ -26,18 +26,3 @@ tbody {
 .align-left{
     text-align: left;
 }
-
-.place-order-box{
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-}
-
-.place-order-box button {
-    margin: 20px;
-    height: 80px;
-    width: 300px;
-    font-size: 2rem;
-    background: whitesmoke;
-    border-radius: 50%;
-}
