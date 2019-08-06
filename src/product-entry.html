@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corvidae Instrument Store</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./product-entry.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Corvidae Instruments
+        </h1>
+        <p class="subtext">
+            Instruments of all kinds for any venue from concert halls to dive bars
+        </p>
+        <p class="subtext">
+            Guitars, Basses, Amps, Drums, Woodwinds, Brass, Percussion, Pianos, Keyboards, and More!
+        </p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./shopping-cart.html">Shopping Cart</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Add New Inventory</h2>
+            <form id="product-form">
+                <p>
+                    <label for="code">Code:</label>
+                    <input id="code" name="code" type="text" required>
+                </p>
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" required>
+                </p>
+
+                <p>
+                    <label for="image">Image:</label>
+                    <input id="image" name="image" type="text" required>
+                </p>
+
+                <p>
+                    <label for="description">Description:</label>
+                    <input id="description" name="description" type="text" required>
+                </p>
+
+                <p>
+                    <label for="category">Category:</label>
+                    <input id="category" name="category" type="text" required>
+                </p>
+
+                <p>
+                    <label for="family">Family:</label>
+                    <input id="family" name="family" type="text" required>
+                </p>
+                
+                <p>
+                    <label for="price">Price:</label>
+                    <input id="price" name="price" type="number" step=".01" required>
+                </p>
+                
+                <p>
+                    <label for="cost">Cost:</label>
+                    <input id="cost" name="cost" type="number" step=".01" required>
+                </p>
+                
+                <button>Add Item To Inventory</button>
+
+
+            </form>
+    </main>
+    <footer>
+        <p>
+            Authored by Dylan Corvidae &copy;
+        </p>
+    </footer>
+    <script src="product-entry.js" type="module"></script>
+</body>
+</html>

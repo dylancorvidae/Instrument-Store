@@ -1,0 +1,21 @@
+#instruments {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#instruments li {
+    list-style: none;
+    position: relative;
+    background: white;
+    border: 1px solid rgb(200, 200, 200);
+    width: 200px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgb(129, 129, 129);
+    margin: 5px;
+}
+
+#instruments li:hover {
+    box-shadow: 3px 3px 6px rgb(63, 63, 63);
+}

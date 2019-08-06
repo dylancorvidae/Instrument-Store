@@ -1,0 +1,43 @@
+table {
+    background-color: lightgray;
+    margin: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+}
+
+thead, tfoot{
+    background-color:whitesmoke;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+table th, table td{
+    text-align: right;
+    padding: 5px;
+}
+
+tbody {
+    border-collapse: separate;
+    padding: 5px;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.place-order-box{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.place-order-box button {
+    margin: 20px;
+    height: 80px;
+    width: 300px;
+    font-size: 2rem;
+    background: whitesmoke;
+    border-radius: 50%;
+}
